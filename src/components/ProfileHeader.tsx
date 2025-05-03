@@ -32,10 +32,10 @@ const ProfileHeader: React.FC<ProfileHeaderProps> = ({
 }) => {
   return (
     <div className="flex flex-col md:flex-row md:items-start gap-6 px-4 py-6">
-      {/* Avatar section */}
+      {/* Avatar section - Now using a lion image */}
       <div className="flex justify-center md:justify-start">
         <Avatar className="w-24 h-24 md:w-36 md:h-36 border-2 border-white">
-          <AvatarImage src={avatarUrl} alt={username} />
+          <AvatarImage src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?q=80&w=400&auto=format" alt={username} />
           <AvatarFallback>{username.substring(0, 2).toUpperCase()}</AvatarFallback>
         </Avatar>
       </div>
