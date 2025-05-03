@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Grid, Image, Bookmark, Tag, User } from 'lucide-react';
@@ -10,8 +9,8 @@ import type { Post } from '../components/PhotoGrid';
 // Sample data
 const profileData = {
   username: 'photography_travel',
-  fullName: 'Alex Morgan',
-  bio: 'Travel Photographer 📸\nExploring the world one photo at a time ✈️\nCollaborations: contact@alexmorgan.com',
+  fullName: 'Abhineet Kumar',
+  bio: 'Travel Photographer 📸\nExploring the world one photo at a time ✈️\nCollaborations: abhineet2102feb@gmail.com',
   avatarUrl: 'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=400&auto=format',
   stats: {
     posts: 142,
@@ -27,7 +26,6 @@ const storyHighlights = [
   { id: '3', imageUrl: 'https://images.unsplash.com/photo-1527631746610-bca00a040d60?q=80&w=200&auto=format', label: 'Tokyo' },
   { id: '4', imageUrl: 'https://images.unsplash.com/photo-1504512485720-7d83a16ee930?q=80&w=200&auto=format', label: 'NYC' },
   { id: '5', imageUrl: 'https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=200&auto=format', label: 'Italy' },
-  { id: '6', imageUrl: 'https://images.unsplash.com/photo-1581351721010-8cf859cb14f3?q=80&w=200&auto=format', label: 'Beaches' },
 ];
 
 const posts: Post[] = [
