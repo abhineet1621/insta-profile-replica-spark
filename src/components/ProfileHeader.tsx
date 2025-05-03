@@ -2,7 +2,7 @@
 import React from 'react';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
-import { Settings, MoreHorizontal } from 'lucide-react';
+import { MoreHorizontal } from 'lucide-react';
 
 interface ProfileStat {
   label: string;
@@ -65,17 +65,17 @@ const ProfileHeader: React.FC<ProfileHeaderProps> = ({
 
         {/* Stats row - Mobile View */}
         <div className="flex justify-around border-y border-gray-200 py-3 my-3 md:hidden">
-          <div className="profile-stat">
-            <span className="profile-stat-count">{stats.posts}</span>
-            <span className="profile-stat-label">posts</span>
+          <div className="profile-stat text-center">
+            <span className="profile-stat-count block font-semibold">{stats.posts}</span>
+            <span className="profile-stat-label text-sm">posts</span>
           </div>
-          <div className="profile-stat">
-            <span className="profile-stat-count">{stats.followers.toLocaleString()}</span>
-            <span className="profile-stat-label">followers</span>
+          <div className="profile-stat text-center">
+            <span className="profile-stat-count block font-semibold">{stats.followers.toLocaleString()}</span>
+            <span className="profile-stat-label text-sm">followers</span>
           </div>
-          <div className="profile-stat">
-            <span className="profile-stat-count">{stats.following.toLocaleString()}</span>
-            <span className="profile-stat-label">following</span>
+          <div className="profile-stat text-center">
+            <span className="profile-stat-count block font-semibold">{stats.following.toLocaleString()}</span>
+            <span className="profile-stat-label text-sm">following</span>
           </div>
         </div>
 
