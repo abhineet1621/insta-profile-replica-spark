@@ -25,7 +25,7 @@ const storyHighlights = [
   { id: '1', imageUrl: 'https://images.unsplash.com/photo-1533929736458-ca588d08c8be?q=80&w=200&auto=format', label: 'Paris' },
   { id: '2', imageUrl: 'https://images.unsplash.com/photo-1543832923-44667a44c804?q=80&w=200&auto=format', label: 'London' },
   { id: '3', imageUrl: 'https://images.unsplash.com/photo-1527631746610-bca00a040d60?q=80&w=200&auto=format', label: 'Tokyo' },
-  { id: '4', imageUrl: 'https://images.unsplash.com/photo-1504512485720-7d83a16ee930?q=80&w=200&auto=format', label: 'NYC' },
+  { id: '4', imageUrl: 'https://images.unsplash.com/photo-1504512485720-7d83a16ee930?q=80&w=200&auto=format', label: 'India' },
   { id: '5', imageUrl: 'https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=200&auto=format', label: 'Italy' },
 ];
 
