@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Avatar } from '@/components/ui/avatar';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 interface StoryHighlightProps {
   imageUrl: string;
@@ -13,8 +13,8 @@ const StoryHighlight: React.FC<StoryHighlightProps> = ({ imageUrl, label }) => {
       <div className="story-highlight-image">
         <div className="story-highlight-image-inner">
           <Avatar className="w-full h-full">
-            <Avatar.Image src={imageUrl} alt={label} />
-            <Avatar.Fallback>{label.substring(0, 2).toUpperCase()}</Avatar.Fallback>
+            <AvatarImage src={imageUrl} alt={label} />
+            <AvatarFallback>{label.substring(0, 2).toUpperCase()}</AvatarFallback>
           </Avatar>
         </div>
       </div>

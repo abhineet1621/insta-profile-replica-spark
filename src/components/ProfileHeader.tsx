@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Avatar } from '@/components/ui/avatar';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
 import { Settings, MoreHorizontal } from 'lucide-react';
 
@@ -35,8 +35,8 @@ const ProfileHeader: React.FC<ProfileHeaderProps> = ({
       {/* Avatar section */}
       <div className="flex justify-center md:justify-start">
         <Avatar className="w-24 h-24 md:w-36 md:h-36 border-2 border-white">
-          <Avatar.Image src={avatarUrl} alt={username} />
-          <Avatar.Fallback>{username.substring(0, 2).toUpperCase()}</Avatar.Fallback>
+          <AvatarImage src={avatarUrl} alt={username} />
+          <AvatarFallback>{username.substring(0, 2).toUpperCase()}</AvatarFallback>
         </Avatar>
       </div>
 
