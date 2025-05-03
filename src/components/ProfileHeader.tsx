@@ -30,6 +30,14 @@ const ProfileHeader: React.FC<ProfileHeaderProps> = ({
   stats,
   isVerified = false,
 }) => {
+  // Function to format follower count
+  const formatFollowers = (count: number) => {
+    if (count >= 1000) {
+      return `${(count / 1000).toFixed(1)}K`;
+    }
+    return count.toString();
+  };
+
   return (
     <div className="flex flex-col md:flex-row md:items-start gap-6 px-4 py-6">
       {/* Avatar section - Now using a lion image */}
@@ -70,7 +78,7 @@ const ProfileHeader: React.FC<ProfileHeaderProps> = ({
             <span className="profile-stat-label text-sm">posts</span>
           </div>
           <div className="profile-stat text-center">
-            <span className="profile-stat-count block font-semibold">{stats.followers.toLocaleString()}</span>
+            <span className="profile-stat-count block font-semibold">{formatFollowers(stats.followers)}</span>
             <span className="profile-stat-label text-sm">followers</span>
           </div>
           <div className="profile-stat text-center">
@@ -85,7 +93,7 @@ const ProfileHeader: React.FC<ProfileHeaderProps> = ({
             <span><strong>{stats.posts}</strong> posts</span>
           </div>
           <div className="profile-stat">
-            <span><strong>{stats.followers.toLocaleString()}</strong> followers</span>
+            <span><strong>{formatFollowers(stats.followers)}</strong> followers</span>
           </div>
           <div className="profile-stat">
             <span><strong>{stats.following.toLocaleString()}</strong> following</span>

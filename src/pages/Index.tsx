@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Grid, Image, Bookmark, Tag, User } from 'lucide-react';
@@ -13,7 +14,7 @@ const profileData = {
   bio: 'Travel Photographer 📸\nExploring the world one photo at a time ✈️\nCollaborations: abhineet2102feb@gmail.com',
   avatarUrl: 'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=400&auto=format',
   stats: {
-    posts: 142,
+    posts: 9,
     followers: 12500,
     following: 568
   },
